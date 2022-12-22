@@ -9,6 +9,10 @@ What I learned from this project is the usage of "if" and "while" statements to 
 
 ## Installation
 
+N/A
+
+## Usage
+
 - open to the page
 - click on generate password button
 - enter a password length
@@ -21,17 +25,6 @@ What I learned from this project is the usage of "if" and "while" statements to 
 ![Start](assets/question1.png)
 ![Criteria](assets/question2.png)
 ![Results](assets/end.png)
-
-
-
-
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
 
 ## Credits
 
