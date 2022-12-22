@@ -45,7 +45,8 @@ function generatePassword() {
   return passwordStorage;
 }
 
-//initialy asked the users for password length, then checks if its more than 8 chars and less than 128 chars. if not then it'll prompt users to 
+//initialy asked the users for password length, then checks if its more than 8 chars and less than 128 chars as well as if user input only contains numbers. 
+//if not then it'll prompt users to 
 //re enter a new number. prompt cycles in a while loop until password length meets requirements. code will know requirement is met when variable 
 //"lengthReq" is turned true on line 67
 
@@ -59,7 +60,9 @@ function askUser(){
   var lengthReq = false;
   var selected = false;
   while(!lengthReq){
-    if(pLength < 8){
+    if(isNaN(pLength)){
+      pLength = prompt("Oops! You can only enter numbers. Please try again");
+    } else if(pLength < 8){
       pLength = prompt("Oops! Password length needs to be atleast 8 characters long. Please try again");
     } else if (pLength > 128) {
       pLength = prompt("Oops! Password needs to be less than 128 characters long. Please try again");

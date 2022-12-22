@@ -56,6 +56,7 @@ function generatePassword() {
 
 function askUser(){
   pLength = prompt('Please enter a password length between 8 and 128');
+  console.log("hi");
   var lengthReq = false;
   var selected = false;
   while(!lengthReq){
